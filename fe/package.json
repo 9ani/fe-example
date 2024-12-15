@@ -1,0 +1,46 @@
+{
+    "name": "fe",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsr generate && tsc -b && cross-env NODE_ENV=production vite build",
+        "build:dev": "tsr generate && tsc -b && cross-env NODE_ENV=development vite build --mode development",
+        "preview": "yarn build:dev && vite preview",
+        "prod": "yarn build && vite preview"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.13.3",
+        "@emotion/styled": "^11.13.0",
+        "@mui/icons-material": "^6.1.1",
+        "@mui/material": "^6.1.1",
+        "@mui/x-data-grid": "^7.21.0",
+        "@tanstack/react-router": "^1.67.0",
+        "effector": "^23.2.2",
+        "effector-react": "^23.2.1",
+        "immer": "^10.1.1",
+        "jwt-decode": "^4.0.0",
+        "ky": "^1.7.2",
+        "lodash": "^4.17.21",
+        "patronum": "^2.2.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-toastify": "^10.0.6",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@tanstack/router-cli": "^1.74.2",
+        "@tanstack/router-devtools": "^1.58.9",
+        "@tanstack/router-plugin": "^1.58.4",
+        "@types/lodash": "^4.17.7",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^4.3.1",
+        "cross-env": "^7.0.3",
+        "typescript": "^5.5.3",
+        "vite": "^5.4.1",
+        "vite-plugin-svgr": "^4.2.0",
+        "vite-tsconfig-paths": "^5.0.1"
+    }
+}
